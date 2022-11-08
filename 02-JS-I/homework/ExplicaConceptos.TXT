@@ -1,0 +1,5 @@
+Variable : lugar donde se guarda informacion para usar despues, puedo sacar y poner cosas cada ves que necesite por ejemplo la variable puede llamarse 'animales' y tener adentro suyo un oso,un perro y un gato
+Strings : Es una variable que forma un texto usando palabras que tiene adentro , por ejemplo el string 'hola mundo' tiene adentro suyo las palabras 'hola' + 'mundo'
+funcion (argumentos,return) : Son instrucciones que seran usadas sobre 'argumentos' y me devolvera un resultado que es return
+declaracion (if) : Le digo que haga algo pero solo si se cumple una condicion 
+Valores Booleanos (true,false) : Le digo algo y me respondera si es verdadero o falso , por ejemplo si le digo que 1+1=3 me dira que es falso (false) , si le digo que 1+1=2 me dira que es verdadero (true)
