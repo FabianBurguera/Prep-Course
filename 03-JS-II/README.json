@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "lessonTitle": "JavaScript II",
   "feedbackID": "03-JS-II",
   "permalink": "/JavaScript_II/",
@@ -7,13 +6,5 @@
   "eleventyNavigation": {
     "key": "JS II",
     "order": 7
-=======
-  "lessonTitle": "Introducción",
-  "permalink": "/index.html",
-  "layout": "intro",
-  "eleventyNavigation": {
-    "key": "Intro",
-    "order": 0
->>>>>>> fb3695090940dea6b9265b2f255c615de6f9b6c4
   }
 }
