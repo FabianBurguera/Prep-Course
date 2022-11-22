@@ -31,7 +31,7 @@ function mayoriaDeEdad(edad) {
     return "Allowed" ;
   }
   else {
-    return "Not Allowed" ;
+    return "Not allowed" ;
   }
   
 
@@ -64,15 +64,15 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 if (idioma==="aleman"){
-  return "Gluten Tag!";
+  return "Guten Tag!";
 }
 else if (idioma==="mandarin"){
-  return "Ni hao!";
+  return "Ni Hao!";
 }
 else if (idioma==="ingles"){
-  return "Hello";
+  return "Hello!";
 }else {
-  return "Hola";
+  return "Hola!";
 
 } 
 }
@@ -164,15 +164,15 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-if (num1<0 || num2<0 || num3<0){
-  return "Hay Negativos" ;
+if (num1<0 || num2<0 || num3<0){   
+  return "Hay negativos" ;
 }
 if (num1>num2 && num1>num3 && num1>0) {
-  return "Numero 1 es mayor y positivo" ;
+  return "Número 1 es mayor y positivo" ;
 }
 
 if (num3>num1 && num3>num2) {
-  let i=num3++ ; return i ;
+  let i=++num3 ; return i ;
 }
 if (num1===0 || num2===0 || num3===0){
   return "Error" ;
@@ -208,7 +208,7 @@ function esVerdadero(valor){
     return "Soy verdadero";
   }
   if (valor===false){
-  return "Soy falso ";
+  return "Soy falso";
 }
 }
 
@@ -238,7 +238,7 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   let contador=0;
   while (contador<8){
-    numero = numero + 5;
+    numero===numero + 5;
 
     contador ++}
     console.log(numero) ; 
