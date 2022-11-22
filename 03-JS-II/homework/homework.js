@@ -170,14 +170,12 @@ if (num1<0 || num2<0 || num3<0){
 if (num1>num2 && num1>num3 && num1>0) {
   return "Número 1 es mayor y positivo" ;
 }
-
-if (num3>num1 && num3>num2) {
-  let i=++num3 ; return i ;
-}
 if (num1===0 || num2===0 || num3===0){
   return "Error" ;
 }
-else {
+if (num3>num1 && num3>num2) {
+  let i=++num3 ; return i ;
+} else {
   return false;
 }
 }
@@ -236,12 +234,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  let contador=0;
-  while (contador<8){
-    numero===numero + 5;
-
-    contador ++}
-    console.log(numero) ; 
+  var a = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
 }
 
 
