@@ -27,7 +27,7 @@ function mayoriaDeEdad(edad) {
     return "No existe esa edad";
   }
   else {
-    return "Not Allowed" ;
+    return "Not allowed" ;
   }
 }
   
@@ -79,20 +79,16 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color) {
     case "blue" :
-      console.log ("This is blue");
-      break;
+      return "This is blue";
     case "red" :
-      console.log ("This is red");
-      break;
+      return "This is red";
     case "green" :
-      console.log ("This is green");
-      break;
-    case "orange" :
-      console.log ("This is orange");
-      break;
-    default :
-      console.log ("Color not found");
-      break;
+      return "This is green";
+     case "orange" :
+    return "This is orange";
+     default :
+      return "Color not found";
+     
   }
 }
 
@@ -107,7 +103,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero>20 || numero<50 ;
+  return numero>20 && numero<50 ;
 }
 
 function esEntero(numero) {
@@ -147,7 +143,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1===0===num2===num3){
+  if (num1===0 || num2===0 || num3===0){
     return "Error";
   }
   else if (num1<0 || num2<0 || num3<0){
