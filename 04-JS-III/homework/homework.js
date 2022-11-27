@@ -29,8 +29,8 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
  
-  for (i=0 ; i<array.length ; i++) {
-   return array[i] +1; }
+  for (var i=0 ; i<array.length ; i++) {
+   return array[i] + 1 ; }
 }
 
 
@@ -67,7 +67,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (i=0 ; i<array.length ; i++) {
+  for (var i=0 ; i<array.length ; i++) {
    if (array[i]===elemento) {
     return true ;
    }}
@@ -79,7 +79,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma=numeros[0]
-  for (i=1 ; i<numeros ; i++){
+  for (var i=1 ; i<numeros.length ; i++){
    suma=suma+numeros[i] ;
 }
 return suma;
@@ -101,7 +101,7 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
  var masgrande=numeros[0]
-  for (i=1 ; i<numeros.lenght ; i++)
+  for (var i=1 ; i<numeros.lenght ; i++)
   { if (numeros[i]>masgrande)
     {
     masgrande=numeros[i] ;
@@ -120,7 +120,7 @@ function multiplicarArgumentos() {
   }
   var multi=1
 for (var i=0 ; i<arguments.length ; i++){
-multi = multi*arguments[i];
+multi === multi*arguments[i];
 }
 return multi ;
 }
@@ -130,7 +130,7 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   var cantidad =0
-  for (i=0 ; i<arreglo.lenght ; i++)
+  for (var i=0 ; i<arreglo.lenght ; i++)
   {
     if (arreglo[i]>18) {
       cantidad=cantidad++
@@ -155,14 +155,12 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  for (var i=n ; i>10 ; i/10){
-    n=i
+  let num = n.toString()
+  if(num.charAt(0) === "9"){
+    return true
   }
-  if (n>=9 || n<10) {
-    return true ;
-  }
-  else return false;
-  }
+  return false
+}
 
 
 
@@ -176,9 +174,12 @@ function todosIguales(arreglo) {
   { esdif = esdif +1 ;
 }
   }
-  if (esdif>0) {
-    return false;
+  if (esdif===0) {
+    return true;
   } 
+  else {
+    return false
+  }
 }
 
 
@@ -188,10 +189,10 @@ function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
+  // Tu código
   var nuevoarray=[] ;
   var cuentameses=0 ; 
-  for (var i=0 ; i<array.length ; i++){}
+  for (var i=0 ; i<array.length ; i++){
    if (array[i]==="Enero" ||array[i]==="Marzo" || array[i]==="Noviembre" ){
    nuevoarray.push(array[i]) ;
    cuentameses= cuentameses+1 ;
@@ -203,6 +204,7 @@ function mesesDelAño(array) {
 }
 else {
   return "No se encontraron los meses pedidos"
+}
 }
 }
 
