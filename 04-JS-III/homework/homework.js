@@ -85,14 +85,14 @@ function agregarNumeros(numeros) {
 return suma;
 }
 
-/*
+
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 
-  let promedio=agregarNumeros(resultadosTest/resultadosTest.length);
-   return promedio ; 
+  return agregarNumeros(resultadosTest/resultadosTest.length);
+   
 }
 
 
@@ -109,7 +109,7 @@ function numeroMasGrande(numeros) {
 }}
   return masgrande ;
 }
-*/
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
