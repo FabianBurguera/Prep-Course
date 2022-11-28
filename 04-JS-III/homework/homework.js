@@ -109,7 +109,7 @@ function numeroMasGrande(numeros) {
 }}
   return masgrande ;
 }
-
+*/
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
@@ -163,7 +163,7 @@ function empiezaConNueve(n) {
 }
 
 
-*/
+
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
