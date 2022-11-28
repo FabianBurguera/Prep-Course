@@ -93,7 +93,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
 
   //return agregarNumeros(resultadosTest/resultadosTest.length);}
-   
+}
 
 
 
