@@ -97,7 +97,7 @@ function promedioResultadosTest(resultadosTest) {
 
 
 
-function numeroMasGrande(numeros) {/*
+function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
@@ -108,11 +108,11 @@ function numeroMasGrande(numeros) {/*
     masgrande=numeros[i] ;
   
 }}
-  return masgrande ;*/
+  return masgrande ;
 }
 
 
-function multiplicarArgumentos() {/*
+function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
@@ -123,11 +123,11 @@ function multiplicarArgumentos() {/*
 for (var i=0 ; i<arguments.length ; i++){
 multi === multi*arguments[i];
 }
-return multi ;*/
+return multi ;
 }
 
 
-function cuentoElementos(arreglo){/*
+function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   var cantidad =0
@@ -137,11 +137,11 @@ function cuentoElementos(arreglo){/*
       cantidad=cantidad++
     }
   }
-return cantidad ;*/
+return cantidad ;
 }
 
 
-function diaDeLaSemana(numeroDeDia) {/*
+function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
@@ -149,10 +149,10 @@ function diaDeLaSemana(numeroDeDia) {/*
   if(numeroDeDia === 1 || numeroDeDia === 7 ){
     return "Es fin de semana" ;
   }
-  return "Es dia Laboral" ; */
+  return "Es dia Laboral" ; 
 } 
 
-function empiezaConNueve(n) {
+function empiezaConNueve(n) {/*
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
@@ -160,12 +160,12 @@ function empiezaConNueve(n) {
   if(num.charAt(0) === "9"){
     return true
   }
-  return false
+  return false*/
 }
 
 
 
-function todosIguales(arreglo) {
+function todosIguales(arreglo) {/*
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
@@ -180,13 +180,13 @@ function todosIguales(arreglo) {
   } 
   else {
     return false
-  }
+  }*/
 }
 
 
 
 
-function mesesDelAño(array) {
+function mesesDelAño(array) {/*
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
@@ -206,7 +206,7 @@ function mesesDelAño(array) {
 else {
   return "No se encontraron los meses pedidos"
 }
-}
+}*/
 }
 
 
