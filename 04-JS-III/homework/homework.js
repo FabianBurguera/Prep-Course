@@ -147,11 +147,11 @@ return total;
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  let cantidad =0
-  for (var i=0 ; i<arreglo.lenght ; i++)
-  {
-    if (arreglo[i]>=18) {
-      cantidad++
+  let cantidad =0 ;
+  for (let i=0 ; i<arreglo.lenght ; i++) {
+  
+    if (arreglo[i]>18) { 
+      cantidad++ 
     }
   }
 return cantidad ;
@@ -186,7 +186,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
- for (var i=0 ; i<arreglo.lenght ; i++){
+ for (var i=0 ; i<arreglo.lenght-1 ; i++){
  if (arreglo[i] !== arreglo[i+1]){
   return false
 }
@@ -197,9 +197,7 @@ else {
   
 
 }
-
-
-
+  
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
@@ -241,7 +239,7 @@ function mayorACien(array) {
 }
 
 
-function breakStatement(numero) {
+function breakStatement(numero) { 
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
@@ -250,20 +248,23 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
 var array = [];
-var suma=numero;
-var i=0 ;
-while (i<10) {
-suma=suma+2
-i++
-if (i===suma)
-return "Se interrumpió la ejecución" ;
-break;
+var suma=numero; 
+let i=0 ; 
+while (i<10) { 
+suma=suma+2  
+i++         
+if (i===suma) break;
+else {
+  array.push(suma)
 }
+}
+if (i<10) {
+  return "Se interrumpió la ejecución"
+}
+else {
 return array;
 }
-
-
-
+}
 
 
 function continueStatement(numero) {
@@ -281,8 +282,10 @@ i++
 if (i===5){  
   continue ;
 }
+else {
   suma=suma+2 ;
-
+  array.push(suma) ; 
+}
 }
 return array;
 }
