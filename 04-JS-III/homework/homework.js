@@ -225,7 +225,7 @@ function mayorACien(array) {
 }
 
 
-function breakStatement(numero) {/*
+function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
@@ -243,7 +243,7 @@ if (i===suma)
 return "Se interrumpió la ejecución" ;
 break;
 }
-return array;*/
+return array;
 }
 
 
