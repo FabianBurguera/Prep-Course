@@ -3,7 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  array[0] ; 
+  return array[0] ; 
 }
 
 
@@ -28,9 +28,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
- 
+var arrayincr = [ ] ; 
   for (var i=0 ; i<array.length ; i++) {
-   return array[i] + 1 ; }
+   arrayincr.push(array[i] +1 ) ;
+}
+return arrayincr;
 }
 
 
@@ -70,7 +72,10 @@ function arrayContiene(array, elemento) {
   for (var i=0 ; i<array.length ; i++) {
    if (array[i]===elemento) {
     return true ;
-   }}
+   }
+  else {
+    return false;
+  }}
 }
 
 
@@ -91,8 +96,15 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-
-  return agregarNumeros(resultadosTest/resultadosTest.length);}
+  var suma=numeros[0]
+  var promedio
+  for (var i=1 ; i<numeros.length ; i++){
+   suma=suma+numeros[i] ;
+ }
+  promedio=suma/numeros.length ;
+  return promedio ;
+  }
+  
 
 
 
@@ -107,8 +119,9 @@ function numeroMasGrande(numeros) {
     {
     masgrande=numeros[i] ;
   
-}}
-  return masgrande ;
+}
+return masgrande ;
+}
 }
 
 
@@ -119,11 +132,11 @@ function multiplicarArgumentos() {
   if (arguments.length <1){ 
     return 0;
   }
-  var multi=1
+  var total=1
 for (var i=0 ; i<arguments.length ; i++){
-multi === multi*arguments[i];
+total= total*arguments[i];
 }
-return multi ;
+return total;
 }
 
 
@@ -133,7 +146,7 @@ function cuentoElementos(arreglo){
   var cantidad =0
   for (var i=0 ; i<arreglo.lenght ; i++)
   {
-    if (arreglo[i]>18) {
+    if (arreglo[i]>=19) {
       cantidad=cantidad++
     }
   }
@@ -198,7 +211,8 @@ function mesesDelAño(array) {
    nuevoarray.push(array[i]) ;
    cuentameses= cuentameses+1 ;
    }
-   if (cuentameses===3)
+  }
+  if (cuentameses===3)
 {
   return nuevoarray ;
 
@@ -207,7 +221,7 @@ else {
   return "No se encontraron los meses pedidos"
 }
 }
-}
+
 
 
 function mayorACien(array) {
@@ -236,7 +250,7 @@ function breakStatement(numero) {
 var array = [];
 var suma=numero;
 var i=0 ;
-while (i<=10) {
+while (i<10) {
 suma=suma+2
 i++
 if (i===suma)
@@ -261,7 +275,7 @@ var array = [];
 var suma=numero; 
 var i=0 ;
 while (i<10) { 
-i++ // i=1
+i++ 
 if (i===5){  
   continue ;
 }
