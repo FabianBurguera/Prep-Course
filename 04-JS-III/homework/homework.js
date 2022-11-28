@@ -148,15 +148,13 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let cantidad =0 ;
-  for (let i=0 ; i<arreglo.lenght ; i++) {
-  
-    if (arreglo[i]>18) { 
-      cantidad++ 
-    }
+  for (i=0 ; i<arreglo.length ; i ++){
+    if (arreglo[i]>18) {
+    cantidad=cantidad+1
   }
-return cantidad ;
+  }
+  return cantidad ;
 }
-
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
@@ -186,17 +184,18 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
- for (var i=0 ; i<arreglo.lenght-1 ; i++){
+ for (var i=0 ; i<arreglo.lenght-1 ; i++){ 
  if (arreglo[i] !== arreglo[i+1]){
   return false
-}
-else {
+}}
+
   return true;
-}
- } 
-  
+
 
 }
+  
+
+
   
 
 function mesesDelAño(array) {
