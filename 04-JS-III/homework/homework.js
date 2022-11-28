@@ -187,10 +187,10 @@ function todosIguales(arreglo) {
  for (var i=0 ; i<arreglo.lenght-1 ; i++){ 
  if (arreglo[i] !== arreglo[i+1]){
   return false ;
- }else{
+ }}
   return true ;
-}
- }
+
+ 
 }
 
 
