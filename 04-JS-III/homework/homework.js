@@ -163,7 +163,7 @@ function empiezaConNueve(n) {
 }
 
 
-
+*/
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
@@ -267,7 +267,7 @@ else {
 }
 }
 return array;
-}*/
+}
 
 
 // No modificar nada debajo de esta línea
