@@ -116,16 +116,17 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
- var masgrande=numeros[0]
-  for (var i=1 ; i<numeros.lenght ; i++)
-  { if (numeros[i]>masgrande)
-    {
+ var masgrande=numeros[0] ;
+  for (var i=1 ; i<numeros.length ; i++){
+   if (numeros[i]>masgrande){
+    
     masgrande=numeros[i] ;
   
 }}
 return masgrande ;
 
 }
+
 
 
 function multiplicarArgumentos() {
@@ -149,7 +150,7 @@ function cuentoElementos(arreglo){
   let cantidad =0
   for (var i=0 ; i<arreglo.lenght ; i++)
   {
-    if (arreglo[i]>18) {
+    if (arreglo[i]>=18) {
       cantidad++
     }
   }
@@ -185,13 +186,15 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
- let esdif = 0 ;
- for (var i=1 ; i<arreglo.lenght ; i++){
- if (arreglo[0]!=arreglo[i])
-  { esdif = esdif +1 ;
+ for (var i=0 ; i<arreglo.lenght ; i++){
+ if (arreglo[i] !== arreglo[i+1]){
+  return false
+}
+else {
+  return true;
 }
  } 
-    return esdif===0
+  
 
 }
 
