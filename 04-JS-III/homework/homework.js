@@ -72,11 +72,14 @@ function arrayContiene(array, elemento) {
   for (var i=0 ; i<array.length ; i++) {
    if (array[i]===elemento) {
     return true ;
-   }
-  else {
+   }}
+  
     return false;
-  }}
+  
 }
+
+ 
+
 
 
 function agregarNumeros(numeros) {
@@ -96,12 +99,12 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var suma=numeros[0]
+  var suma=resultadosTest[0]
   var promedio
-  for (var i=1 ; i<numeros.length ; i++){
-   suma=suma+numeros[i] ;
+  for (var i=1 ; i<resultadosTest.length ; i++){
+   suma=suma+resultadosTest[i] ;
  }
-  promedio=suma/numeros.length ;
+  promedio=suma/resultadosTest.length ;
   return promedio ;
   }
   
@@ -119,9 +122,9 @@ function numeroMasGrande(numeros) {
     {
     masgrande=numeros[i] ;
   
-}
+}}
 return masgrande ;
-}
+
 }
 
 
@@ -143,11 +146,11 @@ return total;
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var cantidad =0
+  let cantidad =0
   for (var i=0 ; i<arreglo.lenght ; i++)
   {
-    if (arreglo[i]>=19) {
-      cantidad=cantidad++
+    if (arreglo[i]>18) {
+      cantidad++
     }
   }
 return cantidad ;
@@ -182,18 +185,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
- var esdif = 0 ;
+ let esdif = 0 ;
  for (var i=1 ; i<arreglo.lenght ; i++){
- if (arreglo[0]!==arreglo[i])
+ if (arreglo[0]!=arreglo[i])
   { esdif = esdif +1 ;
 }
-  }
-  if (esdif===0) {
-    return true;
-  } 
-  else {
-    return false
-  }
+ } 
+    return esdif===0
+
 }
 
 
