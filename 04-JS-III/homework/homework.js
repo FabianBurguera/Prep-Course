@@ -187,16 +187,10 @@ function todosIguales(arreglo) {
  for (var i=0 ; i<arreglo.lenght-1 ; i++){ 
  if (arreglo[i] !== arreglo[i+1]){
   return false
-}}
-
-  return true;
-
-
+ }else {
+  return true;}
 }
-  
-
-
-  
+}
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
