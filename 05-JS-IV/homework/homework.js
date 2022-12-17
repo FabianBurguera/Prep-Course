@@ -71,7 +71,15 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  if ( usuario['email'] ){
+    return true ; 
+  }
+  else { 
+  return false; 
 }
+  }
+
 
 function tienePropiedad (objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
