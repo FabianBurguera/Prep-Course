@@ -42,7 +42,7 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
  var objetoMisterioso = {
   numeroMisterioso : 1,
  };
- var prod =objetoMisterioso.numeroMisterio*5;
+ var prod =objetoMisterioso.numeroMisterioso*5;
  return prod ;
 
 }
