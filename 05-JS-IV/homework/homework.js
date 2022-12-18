@@ -120,7 +120,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
   for (let i=0 ; i<usuarios.lenght ; i++){
-    usuarios[i].esPremium = true ;
+    usuario[i].esPremium = true ;
   }
   return usuarios;
 }
@@ -138,7 +138,7 @@ function sumarLikesDeUsuario (usuario) {
 
   }
   return suma ;
-  
+
 }
 
 function agregarMetodoCalculoDescuento (producto) {
