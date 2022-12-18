@@ -122,7 +122,7 @@ function pasarUsuarioAPremium (usuarios) {
   for (let i=0 ; i<usuarios.lenght ; i++){
     usuario[i].esPremium = true ;
   }
-  return usuarios;
+  return usuario;
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -132,9 +132,9 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  let suma = 0;
+  var suma = 0;
   for (let i = 0 ; i<usuario.posts.lenght ; i++){
-    suma == suma + post.likes ;
+    suma = suma + usuario.posts[i].likes ;
 
   }
   return suma ;
