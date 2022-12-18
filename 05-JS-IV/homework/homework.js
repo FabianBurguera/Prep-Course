@@ -120,7 +120,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
   for (let i=0 ; i<usuarios.lenght ; i++){
-    usuario[i].esPremium = true ;
+    usuarios[i].esPremium = true ;
   }
   return usuarios;
 }
