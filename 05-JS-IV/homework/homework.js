@@ -122,7 +122,7 @@ function pasarUsuarioAPremium (usuarios) {
   for (let i=0 ; i<usuarios.lenght ; i++){
     usuario[i].esPremium = true ;
   }
-  return usuario;
+  return usuarios;
 }
 
 function sumarLikesDeUsuario (usuario) {
